@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red or Blue</title>
+    <link rel="stylesheet" href="redorblue.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Red or Blue</h1>
+            <button class="back-button" onclick="location.href='index.html'">Back to Hub</button>
+        </header>
+        
+        <div class="game-container">
+            <div class="category-select">
+                <h2>Choose a Category</h2>
+                <div class="categories">
+                    <button class="category-btn" data-category="foods">Foods</button>
+                    <button class="category-btn" data-category="games">Games</button>
+                    <button class="category-btn" data-category="animals">Animals</button>
+                </div>
+            </div>
+            
+            <div class="game-screen hidden">
+                <div class="choice-container">
+                    <div class="choice red-choice" id="red-choice">
+                        <img id="red-image" src="" alt="Red choice">
+                        <button class="select-btn" id="red-btn">CHOOSE RED</button>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="choice blue-choice" id="blue-choice">
+                        <img id="blue-image" src="" alt="Blue choice">
+                        <button class="select-btn" id="blue-btn">CHOOSE BLUE</button>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span id="current-count">0</span>/<span id="total-count">0</span>
+                </div>
+            </div>
+            
+            <div class="results-screen hidden">
+                <h2>Results</h2>
+                <div id="results-stats"></div>
+                <button id="play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="redorblue.js"></script>
+</body>
+</html>

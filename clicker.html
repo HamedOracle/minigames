@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem Clicker</title>
+    <link rel="stylesheet" href="clicker.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gem Clicker</h1>
+            <button class="back-button" onclick="location.href='index.html'">Back to Hub</button>
+        </header>
+        
+        <div class="game-container">
+            <div class="stats">
+                <div class="gems-count">
+                    <span id="gems">0</span> Gems
+                </div>
+                <div class="gems-per-second">
+                    <span id="gems-per-second">0</span> Gems per second
+                </div>
+            </div>
+            
+            <div class="click-area" id="click-area">
+                <img src="https://via.placeholder.com/150?text=Gem" alt="Gem" id="gem-image">
+                <div class="click-effect hidden" id="click-effect">+1</div>
+            </div>
+            
+            <div class="upgrades">
+                <h2>Upgrades</h2>
+                <div class="upgrade" id="click-power-upgrade">
+                    <h3>Click Power</h3>
+                    <p>Current: <span id="current-click-power">1</span> gems per click</p>
+                    <p>Next: <span id="next-click-power">2</span> gems per click</p>
+                    <button class="upgrade-btn" id="click-power-btn">Upgrade (Cost: <span id="click-power-cost">20</span> gems)</button>
+                </div>
+                
+                <div class="upgrade" id="auto-clicker-upgrade">
+                    <h3>Auto Clicker</h3>
+                    <p>Current: <span id="current-auto-clicker">0</span> gems per second</p>
+                    <p>Next: <span id="next-auto-clicker">1</span> gems per second</p>
+                    <button class="upgrade-btn" id="auto-clicker-btn">Upgrade (Cost: <span id="auto-clicker-cost">1000</span> gems)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="clicker.js"></script>
+</body>
+</html>

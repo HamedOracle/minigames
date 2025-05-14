@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash or Pass</title>
+    <link rel="stylesheet" href="smashpass.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smash or Pass</h1>
+            <button class="back-button" onclick="location.href='index.html'">Back to Hub</button>
+        </header>
+        
+        <div class="game-container">
+            <div class="category-select">
+                <h2>Choose a Category</h2>
+                <div class="categories">
+                    <button class="category-btn" data-category="celebrities">Celebrities</button>
+                    <button class="category-btn" data-category="game-characters">Game Characters</button>
+                    <button class="category-btn" data-category="anime">Anime Characters</button>
+                </div>
+            </div>
+            
+            <div class="game-screen hidden">
+                <div class="image-container">
+                    <img id="current-image" src="" alt="Current image">
+                </div>
+                <div class="buttons">
+                    <button id="smash-btn">SMASH</button>
+                    <button id="pass-btn">PASS</button>
+                </div>
+                <div class="progress">
+                    <span id="current-count">0</span>/<span id="total-count">0</span>
+                </div>
+            </div>
+            
+            <div class="results-screen hidden">
+                <h2>Results</h2>
+                <div id="results-stats"></div>
+                <button id="play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="smashpass.js"></script>
+</body>
+</html>
